@@ -236,7 +236,7 @@
             </h1>
             <p className="text-emerald-900 text-base md:text-lg lg:text-xl font-bold max-w-2xl mx-auto leading-relaxed bg-white/60 p-4 md:p-6 rounded-2xl shadow-sm border border-white/50 backdrop-blur-sm">
               長老：「見習妖精啊，遠古的『恐龍數據』正在森林中復甦。<br className="hidden md:block"/>
-              唯有掌握 <span className="text-teal-600">Z分數魔法</span> 與 <span className="text-sky-600">箱型結界</span>，方能馴服牠們。<br className="hidden md:block"/>
+              唯有掌握 <span className="text-teal-600">Z分數魔法</span> 與 <span className="text-sky-600">四分位距</span>，方能馴服牠們。<br className="hidden md:block"/>
               準備好接受這 16 個篇章的『iPAS 遠古卷軸』試煉了嗎？」
             </p>
           </div>
@@ -510,10 +510,10 @@
               <HologramModel emoji="🧙‍♂️" scale={0.6} />
             </div>
             <h2 className="text-2xl lg:text-3xl text-indigo-300 font-black mb-4 text-center mt-6 lg:mt-8 tracking-widest font-serif border-b border-indigo-700/50 pb-4">
-              第九章：長老的結界圖紙
+              第九章：長老的防禦圖紙 (四分位距)
             </h2>
             <p className="text-indigo-100 text-base lg:text-lg mb-4 lg:mb-6 leading-relaxed">
-              「Z分數太容易被暴龍級的極端值影響。來學學堅不可摧的<b>『箱型結界 (Boxplot)』</b>吧！我們不看體重大小，只看恐龍排隊的名次！」
+              「Z分數太容易被暴龍級的極端值影響。來學學堅不可摧的<b>『四分位距 (IQR)』</b>吧！我們不看體重大小，只看恐龍排隊的名次！」
             </p>
             <div className="bg-indigo-950/60 rounded-xl p-4 lg:p-6 mb-4 lg:mb-6 border border-indigo-800/50 shadow-inner">
               <p className="text-sky-300 mb-3 font-bold text-sm lg:text-base">1. 把所有數據從小到大排序，切成四等份：</p>
@@ -529,16 +529,16 @@
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <div className="bg-indigo-800/40 p-4 lg:p-5 rounded-xl border border-indigo-500/30 flex flex-col justify-center shadow-sm">
                 <span className="text-xl lg:text-2xl text-sky-300 font-black mb-1 lg:mb-2 font-mono">IQR = Q3 - Q1</span>
-                <span className="text-xs lg:text-sm text-indigo-100 leading-relaxed">「四分位距」，包含了中間 50% 核心數據，是結界的厚度！</span>
+                <span className="text-xs lg:text-sm text-indigo-100 leading-relaxed">「四分位距」，包含了中間 50% 核心數據，這是我們防禦的基礎！</span>
               </div>
               <div className="bg-rose-900/40 p-4 lg:p-5 rounded-xl border border-rose-500/30 flex flex-col justify-center shadow-sm">
                 <span className="text-lg lg:text-xl text-rose-300 font-black mb-1 lg:mb-2 font-mono">上限 = Q3 + 1.5 × IQR</span>
-                <span className="text-xs lg:text-sm text-rose-100 leading-relaxed">超過此結界上限的數值，統統判定為異常的暴龍級數據！</span>
+                <span className="text-xs lg:text-sm text-rose-100 leading-relaxed">超過此防護上限的數值，統統判定為異常的暴龍級數據！</span>
               </div>
             </div>
             <div className="mt-6 flex justify-end shrink-0">
               <button onClick={() => setStage(10)} className="px-6 py-3 lg:px-8 lg:py-3 bg-indigo-400 text-white font-black rounded-full hover:bg-indigo-500 shadow-[0_0_20px_rgba(129,140,248,0.5)] transition-all">
-                明白！開始構築結界 ➔
+                明白！開始構築防禦 ➔
               </button>
             </div>
           </div>
@@ -569,7 +569,7 @@
               </table>
             </div>
             <div className="text-center bg-indigo-50/80 p-4 lg:p-5 rounded-2xl text-indigo-900 font-bold border border-indigo-100 shadow-sm backdrop-blur-sm text-sm lg:text-base">
-              記住長老的話：找到 Q1 和 Q3，計算 IQR (Q3 - Q1)，結界上限就是 <span className="text-rose-600 bg-white px-2 lg:px-3 py-1 rounded-full mx-1 font-mono shadow-sm whitespace-nowrap">Q3 + 1.5 × IQR</span>！
+              記住長老的話：找到 Q1 和 Q3，計算 IQR (Q3 - Q1)，安全上限就是 <span className="text-rose-600 bg-white px-2 lg:px-3 py-1 rounded-full mx-1 font-mono shadow-sm whitespace-nowrap">Q3 + 1.5 × IQR</span>！
             </div>
           </div>
           <div className="mt-6 flex justify-end shrink-0">
@@ -584,16 +584,16 @@
             <div className="absolute -top-5 lg:-top-6 left-1/2 -translate-x-1/2 bg-sky-500 text-white px-4 lg:px-6 py-1 lg:py-1.5 rounded-full font-bold shadow-md whitespace-nowrap text-sm lg:text-base">
               📜 iPAS 遠古卷軸試煉 (Q3)
             </div>
-            <h2 className="text-xl lg:text-2xl text-slate-800 font-bold mb-4 text-center mt-2">第十一章：偏態之河</h2>
+            <h2 className="text-xl lg:text-2xl text-slate-800 font-bold mb-4 text-center mt-2">第十一章：單峰右偏態之河</h2>
             <p className="text-center text-xs lg:text-sm text-slate-600 mb-4 lg:mb-6 font-bold leading-relaxed">「當河流(數據)的尾巴往右邊拖得很長時，代表有少數巨型暴龍把『平均數』強烈往右拉了！」</p>
             
             <div className="w-full h-32 lg:h-40 bg-white/60 rounded-2xl mb-6 lg:mb-8 relative overflow-hidden border border-sky-100 shadow-inner">
-              <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
-                <path d="M-10 150 Q 30 150 70 40 T 150 120 T 300 145 T 400 150 L-10 150" fill="rgba(14, 165, 233, 0.2)" stroke="#0ea5e9" strokeWidth="4" />
+              <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 150" preserveAspectRatio="none">
+                <path d="M 0 150 C 20 150, 40 20, 80 20 C 120 20, 200 140, 400 145 L 400 150 L 0 150 Z" fill="rgba(14, 165, 233, 0.2)" stroke="#0ea5e9" strokeWidth="4" />
               </svg>
-              <div className="absolute top-[30%] left-[15%] w-0.5 h-[70%] bg-pink-500 shadow-[0_0_5px_pink]"></div><span className="absolute bottom-2 left-[15%] text-[10px] lg:text-xs text-pink-600 font-bold translate-x-1 lg:translate-x-2">眾數</span>
-              <div className="absolute top-[30%] left-[25%] w-0.5 h-[70%] bg-purple-500 shadow-[0_0_5px_purple]"></div><span className="absolute bottom-2 left-[25%] text-[10px] lg:text-xs text-purple-600 font-bold translate-x-1 lg:translate-x-2">中位數</span>
-              <div className="absolute top-[30%] left-[40%] w-0.5 h-[70%] bg-amber-500 shadow-[0_0_5px_amber]"></div><span className="absolute bottom-2 left-[40%] text-[10px] lg:text-xs text-amber-600 font-bold translate-x-1 lg:translate-x-2">平均數</span>
+              <div className="absolute top-[30%] left-[20%] w-0.5 h-[70%] bg-pink-500 shadow-[0_0_5px_pink]"></div><span className="absolute bottom-2 left-[20%] text-[10px] lg:text-xs text-pink-600 font-bold translate-x-1 lg:translate-x-2">眾數</span>
+              <div className="absolute top-[30%] left-[30%] w-0.5 h-[70%] bg-purple-500 shadow-[0_0_5px_purple]"></div><span className="absolute bottom-2 left-[30%] text-[10px] lg:text-xs text-purple-600 font-bold translate-x-1 lg:translate-x-2">中位數</span>
+              <div className="absolute top-[30%] left-[45%] w-0.5 h-[70%] bg-amber-500 shadow-[0_0_5px_amber]"></div><span className="absolute bottom-2 left-[45%] text-[10px] lg:text-xs text-amber-600 font-bold translate-x-1 lg:translate-x-2">平均數</span>
             </div>
 
             <h3 className="font-bold text-slate-800 mb-3 lg:mb-4 text-center text-sm lg:text-base">請問此資料的偏態 (Skewness) 值為何？</h3>
@@ -617,7 +617,7 @@
             </div>
             <h2 className="text-xl lg:text-2xl text-slate-800 font-bold mb-4 text-center mt-2">第十二章：對抗暴龍的魔法</h2>
             <div className="text-sm lg:text-md bg-amber-50/80 p-4 lg:p-5 rounded-2xl mb-4 lg:mb-6 text-amber-900 leading-relaxed font-bold border border-amber-200 shadow-sm">
-              「繪製恐龍重量的箱型結界後發現：<br/>
+              「分析恐龍重量的四分位距後發現：<br/>
               四分位距(IQR)極小，但上鬚線拉得非常長，且在超級重量區有許多離群值。<br/>
               若想凸顯不同層級差異，該使用何種視覺魔法？」
             </div>
@@ -640,7 +640,7 @@
           <div className="mb-4 bg-white/70 p-4 rounded-2xl shadow-sm border border-white/50 flex flex-col md:flex-row md:justify-between items-start md:items-center gap-2 backdrop-blur-md shrink-0">
             <div>
               <h2 className="text-xl lg:text-2xl text-fuchsia-700 font-black mb-1">第十三章：淨化異變恐龍蛋</h2>
-              <p className="text-fuchsia-900 text-xs lg:text-sm font-bold">找出 <b>異常值 (Outlier)</b>！提示：Q1是第2顆，Q3是第4顆。<br className="hidden md:block"/>心算結界上限：Q3 + 1.5 * (Q3 - Q1)。</p>
+              <p className="text-fuchsia-900 text-xs lg:text-sm font-bold">找出 <b>異常值 (Outlier)</b>！提示：Q1是第2顆，Q3是第4顆。<br className="hidden md:block"/>心算防護上限：Q3 + 1.5 * (Q3 - Q1)。</p>
             </div>
             <div className="text-lg lg:text-xl font-black text-fuchsia-600 bg-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-xl shadow-sm flex items-center gap-3 border border-fuchsia-100">
               <span>🏆 {gameScore}</span>
@@ -653,7 +653,7 @@
             <div className="bg-white/80 px-6 lg:px-8 py-3 lg:py-4 rounded-3xl border border-fuchsia-200 text-fuchsia-900 text-xl lg:text-2xl font-mono font-bold tracking-widest shadow-lg mt-6">
               [ {eggSet.join(', ')} ]
             </div>
-            <p className="text-sm lg:text-md text-fuchsia-800 font-bold bg-white/80 px-4 lg:px-6 py-1.5 lg:py-2 rounded-full shadow-sm text-center">點擊超過結界 (Upper Fence) 的恐龍蛋：</p>
+            <p className="text-sm lg:text-md text-fuchsia-800 font-bold bg-white/80 px-4 lg:px-6 py-1.5 lg:py-2 rounded-full shadow-sm text-center">點擊超過防護上限 (Upper Fence) 的恐龍蛋：</p>
             <div className="flex flex-wrap justify-center gap-4 lg:gap-6 mt-2 lg:mt-4">
               {eggSet.map((val, idx) => (
                 <button key={idx} onClick={() => purifyEgg(val)} className="relative group hover:-translate-y-3 transition-all duration-300">
@@ -668,7 +668,7 @@
           </div>
           <div className="mt-6 w-full flex flex-col md:flex-row justify-between items-center gap-4 shrink-0">
             {eggWins >= 3 ? (
-              <div className="text-fuchsia-600 font-bold animate-pulse bg-white/80 px-4 py-2 rounded-lg shadow-sm text-sm lg:text-base text-center">🎉 結界穩定！隨時可前往下一章。</div>
+              <div className="text-fuchsia-600 font-bold animate-pulse bg-white/80 px-4 py-2 rounded-lg shadow-sm text-sm lg:text-base text-center">🎉 狀態穩定！隨時可前往下一章。</div>
             ) : (
               <div className="text-fuchsia-800 font-bold text-xs lg:text-sm bg-white/60 px-4 py-2 rounded-lg shadow-sm">還需淨化 {3 - eggWins} 顆恐龍蛋解鎖下一章</div>
             )}
@@ -723,7 +723,7 @@
                   </div>
                   <div className="absolute -bottom-16 flex flex-col items-center transition-all duration-1000" style={{ left: summonGiant ? '55%' : '50%', transform: 'translateX(-50%)' }}>
                     <div className="w-0.5 lg:w-1 h-12 bg-amber-500"></div>
-                    <div className="text-[10px] lg:text-xs font-bold text-amber-800 bg-amber-100 px-1 lg:px-2 py-0.5 rounded whitespace-nowrap shadow-sm">中位數(IQR)</div>
+                    <div className="text-[10px] lg:text-xs font-bold text-amber-800 bg-amber-100 px-1 lg:px-2 py-0.5 rounded whitespace-nowrap shadow-sm">中位數(四分位距核心)</div>
                   </div>
                 </div>
                 <div className="mt-16 lg:mt-20 w-full flex justify-center">
@@ -745,7 +745,7 @@
                   </div>
                 </div>
                 <div className="bg-white/80 p-5 lg:p-6 rounded-3xl border border-amber-100 shadow-md relative backdrop-blur-sm">
-                  <h3 className="text-lg lg:text-xl font-black text-amber-600 mb-2 lg:mb-3">📦 箱型結界 (中位數)</h3>
+                  <h3 className="text-lg lg:text-xl font-black text-amber-600 mb-2 lg:mb-3">📦 四分位距 (中位數)</h3>
                   <p className="text-xs lg:text-sm text-amber-900 leading-relaxed font-bold">
                     ✔️ <b>適用</b>：偏態分佈或有離群值時。<br/>
                     ✨ <b>優勢</b>：<span className="underline text-emerald-600">堅若磐石 (Robust)</span>。即使出現 999 的暴龍，中位數幾乎「不為所動」！
@@ -810,13 +810,13 @@
             <div className="bg-white/90 rounded-3xl border-2 border-amber-400 shadow-xl p-5 lg:p-6 flex flex-col h-full relative overflow-hidden backdrop-blur-md group hover:-translate-y-2 transition-transform duration-300">
               <div className="absolute top-0 right-0 w-32 h-32 lg:w-40 lg:h-40 bg-amber-100 rounded-bl-full -z-10 opacity-50"></div>
               <h3 className="text-xl lg:text-2xl font-black text-amber-700 mb-4 flex items-center justify-center border-b-2 border-amber-100 pb-2 shrink-0">
-                <span className="text-2xl lg:text-3xl mr-2">🛡️</span> 陣法二：箱型結界
+                <span className="text-2xl lg:text-3xl mr-2">🛡️</span> 陣法二：四分位距
               </h3>
               
               {/* CSS Cartoon Drawing */}
               <div className="w-full h-40 lg:h-48 bg-amber-50 rounded-2xl border-2 border-amber-200 mb-4 relative overflow-hidden flex items-end px-4 shrink-0">
                 <div className="absolute left-[60%] top-0 bottom-0 w-2 bg-rose-400/50 flex flex-col items-center justify-center">
-                  <span className="bg-rose-500 text-white text-[8px] lg:text-[10px] font-bold px-1 rounded-full whitespace-nowrap transform -rotate-90">防護結界</span>
+                  <span className="bg-rose-500 text-white text-[8px] lg:text-[10px] font-bold px-1 rounded-full whitespace-nowrap transform -rotate-90">防護上限</span>
                 </div>
                 
                 <div className="text-2xl lg:text-3xl absolute bottom-2 left-[10%]">🦕</div>
@@ -851,7 +851,7 @@
           <div className="mb-4 bg-white/70 p-4 rounded-2xl shadow-sm border border-white/50 backdrop-blur-md shrink-0">
             <h2 className="text-xl lg:text-2xl text-indigo-700 font-black mb-2">第十六章：長老的恐龍圖鑑 (底層邏輯)</h2>
             <p className="text-indigo-900 text-xs lg:text-sm font-bold">
-              長老：「為什麼 Z分數 會被暴龍干擾，而 箱型結界 卻堅若磐石？來看看底層運作邏輯吧！」
+              長老：「為什麼 Z分數 會被暴龍干擾，而 四分位距 卻堅若磐石？來看看底層運作邏輯吧！」
             </p>
           </div>
 
@@ -887,7 +887,7 @@
             <div className="bg-white/90 rounded-3xl border-2 border-indigo-300 shadow-xl p-5 lg:p-6 flex flex-col h-full relative overflow-hidden backdrop-blur-md group hover:-translate-y-2 transition-transform duration-300">
               <div className="absolute top-0 right-0 w-32 h-32 lg:w-40 lg:h-40 bg-indigo-100 rounded-bl-full -z-10 opacity-50"></div>
               <h3 className="text-xl lg:text-2xl font-black text-indigo-700 mb-4 flex items-center justify-center border-b-2 border-indigo-100 pb-2 shrink-0">
-                <span className="text-2xl lg:text-3xl mr-2">🎯</span> 結界：中位數
+                <span className="text-2xl lg:text-3xl mr-2">🎯</span> 防禦：中位數
               </h3>
               
               {/* CSS Cartoon Drawing: Queue */}
